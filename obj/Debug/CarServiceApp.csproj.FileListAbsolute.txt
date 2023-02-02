@@ -1,0 +1,68 @@
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\CarServiceApp.exe.config
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\CarServiceApp.exe
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\CarServiceApp.pdb
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.dll
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.xml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\MainWindow.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Pages\ClientListPage.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\App.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp_Content.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp_MarkupCompile.cache
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp_MarkupCompile.lref
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\MainWindow.baml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Pages\ClientListPage.baml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.g.resources
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.Properties.Resources.resources
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.CopyComplete
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.exe
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.pdb
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddEditClientWindow.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddEditClientWindow.baml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddTagsWindow.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddTagsWindow.baml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\ClientVisitsWindows.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\ClientVisitsWindows.baml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\DocumentsListWindow.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\DocumentsListWindow.baml
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\BirthdayListWindow.g.cs
+C:\Users\Acer\source\repos\CarServiceApp\CarServiceApp\obj\Debug\Windows\BirthdayListWindow.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\MainWindow.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Pages\ClientListPage.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddEditClientWindow.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddTagsWindow.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\BirthdayListWindow.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\ClientVisitsWindows.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\DocumentsListWindow.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\App.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp_Content.g.cs
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp_MarkupCompile.cache
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp_MarkupCompile.lref
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.exe
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.pdb
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\CarServiceApp.exe.config
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\CarServiceApp.exe
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\CarServiceApp.pdb
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.dll
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.xml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\bin\Debug\ru\EntityFramework.resources.dll
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\MainWindow.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Pages\ClientListPage.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddEditClientWindow.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\AddTagsWindow.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\BirthdayListWindow.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\ClientVisitsWindows.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\Windows\DocumentsListWindow.baml
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.g.resources
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.Properties.Resources.resources
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.GenerateResource.cache
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.CoreCompileInputs.cache
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.CopyComplete
+D:\4 курс\инсайд\CarServiceApp\CarServiceApp\CarServiceApp\obj\Debug\CarServiceApp.csproj.AssemblyReference.cache

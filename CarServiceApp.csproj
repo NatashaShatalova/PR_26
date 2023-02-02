@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE52FF7D-0B14-453E-B00E-F076FECD454C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarServiceApp</RootNamespace>
+    <AssemblyName>CarServiceApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Model\DataSource\Autoservice.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autoservice.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Autoservice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Autoservice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autoservice.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Client.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\ClientService.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\DocumentByService.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Gender.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Manufacturer.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Product.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\ProductPhoto.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\ProductSale.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Service.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\ServicePhoto.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\sysdiagrams.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSource\Tag.cs">
+      <DependentUpon>Autoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ClientEditInfoUtils.cs" />
+    <Compile Include="Utils\EmailValidator.cs" />
+    <Compile Include="Utils\PageUtils.cs" />
+    <Compile Include="Windows\AddEditClientWindow.xaml.cs">
+      <DependentUpon>AddEditClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddTagsWindow.xaml.cs">
+      <DependentUpon>AddTagsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\BirthdayListWindow.xaml.cs">
+      <DependentUpon>BirthdayListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ClientVisitsWindows.xaml.cs">
+      <DependentUpon>ClientVisitsWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DocumentsListWindow.xaml.cs">
+      <DependentUpon>DocumentsListWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\ClientListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddEditClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddTagsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\BirthdayListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ClientVisitsWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DocumentsListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\DAO\db.cs" />
+    <Compile Include="Pages\ClientListPage.xaml.cs">
+      <DependentUpon>ClientListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\DataSource\Autoservice.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Autoservice.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\DataSource\Autoservice.edmx.diagram">
+      <DependentUpon>Autoservice.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataSource\Autoservice.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Autoservice.edmx</DependentUpon>
+      <LastGenOutput>Autoservice.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\DataSource\Autoservice.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Autoservice.edmx</DependentUpon>
+      <LastGenOutput>Autoservice.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ClientsPhoto\1.jpg" />
+    <Resource Include="Resources\ClientsPhoto\10.jpg" />
+    <Resource Include="Resources\ClientsPhoto\11.jpg" />
+    <Resource Include="Resources\ClientsPhoto\12.jpg" />
+    <Resource Include="Resources\ClientsPhoto\13.jpg" />
+    <Resource Include="Resources\ClientsPhoto\14.jpg" />
+    <Resource Include="Resources\ClientsPhoto\15.jpg" />
+    <Resource Include="Resources\ClientsPhoto\16.jpg" />
+    <Resource Include="Resources\ClientsPhoto\17.jpg" />
+    <Resource Include="Resources\ClientsPhoto\18.jpg" />
+    <Resource Include="Resources\ClientsPhoto\19.jpg" />
+    <Resource Include="Resources\ClientsPhoto\2.jpg" />
+    <Resource Include="Resources\ClientsPhoto\20.jpg" />
+    <Resource Include="Resources\ClientsPhoto\21.jpg" />
+    <Resource Include="Resources\ClientsPhoto\22.jpg" />
+    <Resource Include="Resources\ClientsPhoto\23.jpg" />
+    <Resource Include="Resources\ClientsPhoto\24.jpg" />
+    <Resource Include="Resources\ClientsPhoto\25.jpg" />
+    <Resource Include="Resources\ClientsPhoto\26.jpg" />
+    <Resource Include="Resources\ClientsPhoto\27.jpg" />
+    <Resource Include="Resources\ClientsPhoto\28.jpg" />
+    <Resource Include="Resources\ClientsPhoto\29.jpg" />
+    <Resource Include="Resources\ClientsPhoto\3.jpg" />
+    <Resource Include="Resources\ClientsPhoto\30.jpg" />
+    <Resource Include="Resources\ClientsPhoto\31.jpg" />
+    <Resource Include="Resources\ClientsPhoto\32.jpg" />
+    <Resource Include="Resources\ClientsPhoto\33.jpg" />
+    <Resource Include="Resources\ClientsPhoto\34.jpg" />
+    <Resource Include="Resources\ClientsPhoto\35.jpg" />
+    <Resource Include="Resources\ClientsPhoto\36.jpg" />
+    <Resource Include="Resources\ClientsPhoto\37.jpg" />
+    <Resource Include="Resources\ClientsPhoto\38.jpg" />
+    <Resource Include="Resources\ClientsPhoto\39.jpg" />
+    <Resource Include="Resources\ClientsPhoto\4.jpg" />
+    <Resource Include="Resources\ClientsPhoto\40.jpg" />
+    <Resource Include="Resources\ClientsPhoto\41.jpg" />
+    <Resource Include="Resources\ClientsPhoto\42.jpg" />
+    <Resource Include="Resources\ClientsPhoto\43.jpg" />
+    <Resource Include="Resources\ClientsPhoto\44.jpg" />
+    <Resource Include="Resources\ClientsPhoto\47.jpg" />
+    <Resource Include="Resources\ClientsPhoto\48.jpg" />
+    <Resource Include="Resources\ClientsPhoto\5.jpg" />
+    <Resource Include="Resources\ClientsPhoto\6.jpg" />
+    <Resource Include="Resources\ClientsPhoto\7.jpg" />
+    <Resource Include="Resources\ClientsPhoto\8.jpg" />
+    <Resource Include="Resources\ClientsPhoto\9.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m1.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m10.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m11.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m12.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m13.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m14.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m15.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m16.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m17.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m18.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m19.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m2.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m20.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m21.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m22.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m23.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m24.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m25.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m26.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m27.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m28.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m29.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m3.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m30.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m31.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m32.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m33.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m34.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m35.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m36.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m37.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m38.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m39.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m4.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m40.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m41.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m42.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m43.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m44.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m45.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m46.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m47.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m48.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m49.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m5.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m50.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m6.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m7.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m8.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m9.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m96.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m97.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m98.jpg" />
+    <Resource Include="Resources\ClientsPhoto\m99.jpg" />
+    <Resource Include="Resources\Logo\service_logo.ico" />
+    <Resource Include="Resources\Logo\service_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

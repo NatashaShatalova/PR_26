@@ -1,0 +1,101 @@
+﻿<Window x:Class="CarServiceApp.Windows.AddEditClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarServiceApp.Windows"
+        mc:Ignorable="d"
+        Title="Изменение данными" Height="450" Width="400" ResizeMode="NoResize" FontFamily="Tw Cen MT" Icon="/Resources/Logo/service_logo.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Margin="10,20,10,0">
+                <DockPanel>
+                    <TextBlock Text="Фото" Margin="0,0,20,0" VerticalAlignment="Center"/>
+                    <Image x:Name="iPhoto" HorizontalAlignment="Right" Height="100" Width="auto"/>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <DockPanel Width="220" HorizontalAlignment="Right">
+                        <TextBlock x:Name="tbPathLogo" MaxWidth="110" Margin="0,0,10,0"/>
+                        <Button x:Name="bLogo" Content="Выбрать..." Width="100" HorizontalAlignment="Right" Click="bLogo_Click"/>
+                    </DockPanel>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="ID" Margin="0,0,20,0"/>
+                    <TextBox x:Name="tbId" Width="220" HorizontalAlignment="Right" IsEnabled="False"/>
+                </DockPanel>
+                
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="Фамилия" Margin="0,0,20,0"/>
+                    <TextBox x:Name="tbLastName" Width="220" HorizontalAlignment="Right" MaxLength="50" KeyDown="onlyTextInput"/>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="Имя" Margin="0,0,20,0"/>
+                    <TextBox x:Name="tbFirstName" Width="220" HorizontalAlignment="Right" MaxLength="50"/>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="Отчество" Margin="0,0,20,0"/>
+                    <TextBox x:Name="tbPatronymic" Width="220" HorizontalAlignment="Right" MaxLength="50"/>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="Пол" Margin="0,0,20,0"/>
+                    <ComboBox x:Name="cbGender" Width="220" HorizontalAlignment="Right" Height="22">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="Дата рождения" Margin="0,0,20,0"/>
+                    <DatePicker x:Name="dpBirthDate" Width="220" HorizontalAlignment="Right"/>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="Телефон" Margin="0,0,20,0"/>
+                    <TextBox x:Name="tbPhone" Width="220" HorizontalAlignment="Right" KeyDown="phoneInput" MaxLength="20"/>
+                </DockPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <TextBlock Text="Почта" Margin="0,0,20,0"/>
+                    <TextBox x:Name="tbMail" Width="220" HorizontalAlignment="Right" MaxLength="255"/>
+                </DockPanel>
+
+                <ListView x:Name="lvTags" SelectionMode="Single" BorderThickness="0" MaxHeight="200" SelectionChanged="lvTags_SelectionChanged">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Padding="5" BorderThickness="3" BorderBrush="{Binding Color}" CornerRadius="5" ToolTip="{Binding Color}">
+                                <TextBlock Text="{Binding Title}"/>
+                            </Border>
+                        </DataTemplate>
+                        <!--<GridView>
+                            <GridViewColumn Header="Тег" DisplayMemberBinding="{Binding Title}" Width="150"/>
+                            <GridViewColumn Header="Цвет" Width="150" DisplayMemberBinding="{Binding Color}"/>
+                        </GridView>-->
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,40" HorizontalAlignment="Right">
+                    <Button x:Name="bAddTag" Content="Добавить тег" Click="bAddTag_Click" Padding="10,0" />
+                    <Button x:Name="bDeleteTag" Content="Удалить тег" Click="bDeleteTag_Click" Padding="10,0"/>
+                </StackPanel>
+
+                <DockPanel Margin="0,0,0,20">
+                    <Button x:Name="bReady" Content="Готово" HorizontalAlignment="Left"  Padding="40,0" Click="bReady_Click"/>
+                    <Button x:Name="bDelete" Content="Удалить клиента" HorizontalAlignment="Right"  Padding="40,0" Click="bDelete_Click"/>
+                </DockPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

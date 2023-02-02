@@ -1,0 +1,29 @@
+﻿<Window x:Class="CarServiceApp.Windows.AddTagsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarServiceApp.Windows"
+        mc:Ignorable="d"
+        Title="Добавление тэга" ResizeMode="NoResize" Loaded="Window_Loaded" Icon="/Resources/Logo/service_logo.ico" WindowStartupLocation="CenterScreen" FontFamily="Tw Cen MT" Height="200" Width="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Margin="5">
+            <TextBlock Text="Выберите тэги:" Margin="0,0,0,5"/>
+
+            <ListBox x:Name="lbTags" Background="Transparent" BorderThickness="0" ItemsSource="{Binding Tag}" SelectionMode="Multiple">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Title}" Foreground="{Binding Color}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+
+        <Button x:Name="bReady" Grid.Row="1" Margin="20, 0" Content="Готово" Background="#ff9933" Click="bReady_Click"/>
+    </Grid>
+</Window>
